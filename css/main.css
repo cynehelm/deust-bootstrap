@@ -1,0 +1,11 @@
+.colonne {
+    border: 1px solid red;
+    height: 50px;
+}
+
+#top-container {
+    background-image: url(../img/accueil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
