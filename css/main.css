@@ -3,9 +3,24 @@
     height: 50px;
 }
 
-#top-container {
+#container-top {
     background-image: url(../img/accueil.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.text-custom-color .nav-link{
+    color: #E7AC76;
+}
+.text-custom-color{
+    color: #E7AC76;
+}
+.bg-custom-color{
+    background-color: #E7AC76;
+}
+.bg-custom-color2{
+    background-color: #BB8346;
+}
+.bg-custom-color3{
+    background-color: #1F1917;
+}

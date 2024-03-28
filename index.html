@@ -9,34 +9,38 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
     <script src='./js/bootstrap.bundle.js'></script>
     <script src='./js/main.js'></script>
+    <style>
+
+    </style>    
 </head>
 <body>
-    <div id="top-container" class="vh-100 container-fluid m-0 p-0">
-        <div class="w-100 vh-100 position-absolute bg-dark bg-opacity-50 m-0 p-0"></div>
-        <div class="row z-2 position-absolute w-100">
+    <div id="container-top" class="vh-100 container-fluid m-0 p-0">
+        <div class="w-100 vh-100 position-absolute bg-dark bg-opacity-75 m-0 p-0">
+        </div>
+        <div class="row z-2 position-absolute w-100 gx-0">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg border-bottom border-body bg-transparent">
+                <nav class="navbar navbar-expand-lg bg-dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand text-white" href="#">Placeholder name</a>
+                        <a class="navbar-brand text-custom-color" href="#">PlaceholderLogo</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto"><!--ms = margin start, me = margin end-->
+                            <ul class="navbar-nav ms-auto text-custom-color"><!--ms = margin start, me = margin end-->
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                    <a class="nav-link" aria-current="page" href="#">Accueil</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Présentation</a>
+                                    <a class="nav-link" href="#container-presentation">Présentation</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Portfolio</a>
+                                    <a class="nav-link" href="#container-realisation">Portfolio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Compétences</a>
+                                    <a class="nav-link" href="#container-competences">Compétences</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#container-contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -46,9 +50,12 @@
         </div>
         <div class="row d-flex justify-content-center align-items-center position-relative m-0 h-100">
             <!--Image-->
-            <div class="col-4 ">
-                <h1 class="text-center text-white">Placeholder H1</h1>
-                <a class="btn btn-light">En Savoir plus</a>
+            <div class="col-4">
+                <h1 class="text-center text-custom-color">Sandy</h1>
+                <h2 class="text-center text-custom-color">Design Web</h2>
+                <div class="d-flex justify-content-center">
+                    <a class="btn bg-custom-color">En Savoir plus</a>
+                </div>
             </div>
         </div><!--row-->
     </div><!--container-->
@@ -57,91 +64,105 @@
     <div id="container-presentation" class="container">
         <div class="row">
             <div class="col-8"></div>
-                <p>lorem ipsum</p>
-                <img src="./img/placeholder-presentation.png" alt="...">
+                <h3>Présentation</h3>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                <img src="./img/presentation.jpg" alt="...">
             </div>
-        </div>
+        </div><!--row-->
     </div><!--container-->
+
 
     <!--PROJETS-->
-    <div class="container py-4" id="project-container">
-        <div class="row">
-            <div class="col-12 pb-3">
-                <h2 class="text-center">Présentation</h2>
-            </div>
-        </div><!--row-->
-        <div class="row pb-4">
-            <div class="col-12 col-lg-4">
-                <div class="card">
-                    <img src="./img/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div id="container-realisation" class="bg-custom-color">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <h2 class="text-center">Mes réalisations</h2>
+                </div>
+            </div><!--row-->
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <h3 class="text-center">Faites avec attention et amour</h3>
+                </div>
+            </div><!--row-->
+            <div class="row pb-4">
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./img/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card">
-                    <img src="./img/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./img/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card">
-                    <img src="./img/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./img/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div><!--row-->
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <div class="card">
-                    <img src="./img/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div><!--row-->
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./img/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card">
-                    <img src="./img/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./img/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card">
-                    <img src="./img/placeholder.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./img/placeholder.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div><!--row-->
-    </div><!--container-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--background-->
 
     <!--COMPÉTENCES-->
-    <div id="skills-container" class="py-4 bg-warning-subtle">
+    <div id="container-competences" class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 pb-3">
                     <h2 class="text-center">Mes compétences</h2>
+                </div>
+            </div><!--row-->
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <h3 class="text-center">La maitrise de ces outils est assuré</h3>
                 </div>
             </div><!--row-->
             <div class="row">
@@ -155,7 +176,6 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Figma</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +191,6 @@
                                 <div class="card-body">
                                     <h5 class="card-title">JavaScript</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +206,6 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Wordpress</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +223,6 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Canva</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +238,6 @@
                                 <div class="card-body">
                                     <h5 class="card-title">MacOS</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +253,6 @@
                                 <div class="card-body">
                                     <h5 class="card-title">PHP</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
@@ -247,6 +262,35 @@
         </div><!--container-->
     </div><!--background-->
 
+    <!--CONTACT-->
+    <div id="container-contact" class="py-4 bg-custom-color">
+        <div class="container">
+            <div class="row text-center">
+                <h2>a</h2>
+            </div><!--row-->
+            <div class="row text-center">
+                <h3>b</h3>
+            </div><!--row-->
+            <div class="row text-center">
+                <a href="mailto:" class="btn bg-custom-color2">c</a>
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--background-->
+
+    <!--FOOTER-->
+    <footer id="footer-container" class="bg-custom-color3">
+        <div class="container">
+            <div class="row">
+                <a href="">Sandy</a>
+                <div>
+                    <a href=""><img src="./img/placeholder-socials.png" alt=""></a>
+                    <a href=""><img src="./img/placeholder-socials.png" alt=""></a>
+                    <a href=""><img src="./img/placeholder-socials.png" alt=""></a>
+                    <a href=""><img src="./img/placeholder-socials.png" alt=""></a>
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+    </footer><!--background-->
 
 </body>
 </html>
